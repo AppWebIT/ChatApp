@@ -48,8 +48,8 @@ var lng = 0.0;
 var color = '#000000';
 
 // Vibration
-var storedData;
-var vibration = '';
+var storedData = [];
+var vibration = [];
 
 // Panel schließen, wenn Button "Zahnrad" gedrückt wird
 $$('.panel-close').on('click', function (e) {
@@ -116,6 +116,14 @@ chat.onPageAfterBack('optionen', function (page) {
     initializeChat();
     storedData = chat.formGetData('optionen');
     vibration = storedData.vibration;
+});
+
+chat.onPageAfterBack('map', function (page) {
+    initializeChat();
+});
+
+chat.onPageAfterBack('foto', function (page) {
+    initializeChat();
 });
 
 users.on("value", function(snapshot) {
@@ -249,8 +257,8 @@ function loadMessages(snapshot) {
 function receiveMessage(snapshot) {
     var message = snapshot.val();
     if (message.name === username) return;
-    // alert("hier vibrieren");
-    if (vibration === "on") {
+    // alert("hier vibrieren - Status Vibration: " + vibration[0]);
+    if (vibration[0] === 'on') {
         // Vibration 1 Sekunde / 1 Sekunde Pause / Vibration 1 Sekunde / 1 Sekunde Pause / Vibration 1 Sekunde -> navigator.vibrate([1000, 1000, 1000, 1000, 1000]);
         // Vibration 1 Sekunde
         navigator.vibrate([1000]);
