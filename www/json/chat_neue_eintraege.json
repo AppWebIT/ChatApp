@@ -1,0 +1,8 @@
+﻿{
+    "version": "1.0",
+    "user": "Gast",
+    "chateintraege": [
+        { "username": "Gast", "eintrag": "Das ist ein Testeintrag aus dem JSON-File", "timestamp": "10:25:00", "image": "", "lat": 0.0, "lng": 0.0 },
+        { "username": "Gast", "eintrag": "Das ist ein zweiter Testeintrag aus dem JSON-File", "timestamp": "10:26:00", "image": "", "lat": 0.0, "lng": 0.0 }
+    ]
+}

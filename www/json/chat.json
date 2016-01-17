@@ -1,0 +1,8 @@
+﻿{
+    "user": "Gast",
+    "color": "#00d449",
+    "chateintraege": [
+        { "name": "LocalStorage", "message": "Das ist ein Testeintrag aus dem JSON-File für Intialisierung des Local Storage.", "avatar": false, "date": 1451727516916, "image": "", "lat": 0.0, "lng": 0.0 },
+        { "name": "LocalStorage", "message": "Im Moment gibt es keine Internet Verbindung - Local Storage wurde geladen!", "avatar": false, "date": 1451727516916, "image": "", "lat": 0.0, "lng": 0.0 }
+    ]
+}
